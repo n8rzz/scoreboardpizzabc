@@ -7,5 +7,6 @@ dev/style.css
 dev/.sass-cache/
 dev/_ocss/
 dev/fonts/
+dev/images/
 dev/js/vendor/
 dev/styles/vendor/

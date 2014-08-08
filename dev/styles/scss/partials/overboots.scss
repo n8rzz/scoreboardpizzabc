@@ -16,3 +16,18 @@
 .jumbotron {
 	margin-bottom: 0;
 }
+
+/* carousel */
+.carousel-caption {
+	left: 2%;
+	bottom: 15px;
+	text-align: left;
+	@include border-radius(11px);
+	@include opacity(0.9);
+}
+.carousel-caption h3,
+.carousel-caption p {
+	display: none;
+	padding-left: 15px;
+	@include opacity(0.95);
+}
