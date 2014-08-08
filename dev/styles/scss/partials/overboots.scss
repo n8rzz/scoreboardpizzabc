@@ -1,0 +1,18 @@
+/* overboots.scss === */
+
+/* navigation */
+.navbar {
+	margin-bottom: 0;
+	min-height: 100px;
+	background: none;
+	border: none;
+}
+.navbar-nav a:hover,
+.navbar-nav>.active>a {
+	background-color: #fff !important;
+	border-bottom: 2px solid red;
+}
+
+.jumbotron {
+	margin-bottom: 0;
+}
