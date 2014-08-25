@@ -61,8 +61,15 @@ module.exports = function(grunt) {
 					expand: true,
 					cwd: 'bower_components/bootstrap-sass-official/assets/javascripts/',
 					src: '**',
-					dest: 'dev/js/vendor/',
+					dest: 'dev/js/vendor/bootstrap/',
 					flatten: true		
+				},
+				{
+					expand: true,
+					cwd: 'bower_components/jquery.scrollTo/',
+					src: '**',
+					dest: 'dev/js/vendor/jquery.scrollTo/',
+					flatten: true
 				}]
 			},
 			build: {

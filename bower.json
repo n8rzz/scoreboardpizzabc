@@ -1,8 +1,11 @@
 {
   "name": "scoreboardpizzabc",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "dependencies": {
     "jquery": "~1.9.1",
     "bootstrap-sass-official": "~3.2.0"
+  },
+  "devDependencies": {
+    "jquery.scrollTo": "~1.4.13"
   }
 }
