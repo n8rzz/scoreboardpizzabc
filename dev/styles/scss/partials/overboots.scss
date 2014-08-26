@@ -10,8 +10,8 @@
 }
 
 a.navbar-brand img {
-	margin-left: 5px;
-	margin-top: -5px;
+//	margin-left: 5px;
+//	margin-top: -5px;
 	border: 3px solid #fff;
 	@include border-radius(14px);
 	@include box-shadow(0, 3px, 16px, 1px, #efefef);
@@ -35,20 +35,27 @@ a.navbar-brand img {
 		overflow: hidden;
 	}
 }
-
 .carousel-caption {
-	left: 2%;
-	bottom: 15px;
-	text-align: left;
-	@include border-radius(11px);
-	@include opacity(0.9);
+	bottom: 12%;
+	width: 40%;
+	height: 66%;
+	margin: 0 auto;
+	padding-top: 15px;
+	background: #fefefe;
+	text-shadow: none;
+	@include border-radius(50%);
+	@include opacity(0.6);
+	@include box-shadow(0, 0, 23px, 5px, #fefefe);
+	h2 {margin-top:15px;}
+	
+	h2,
+	h3,
+	p {
+		color: #ccc;
+		@include opacity(1);
+	}
 }
-.carousel-caption h3,
-.carousel-caption p {
-	display: none;
-	padding-left: 15px;
-	@include opacity(0.95);
-}
+
 
 .nav-tabs {
 	border-bottom: none;

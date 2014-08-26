@@ -33,7 +33,7 @@
 	        <span class="icon-bar"></span>
 	        <span class="icon-bar"></span>
 	      </button>
-	      <a class="navbar-brand hidden-xs" href="#"><img src="images/scoreboardpizzabc.png" height="100px" /></a>
+	      <a class="navbar-brand hidden-xs" href="#"><img src="images/scoreboardpizzabc.png" height="75px" /></a>
 	      <a class="navbar-brand visible-xs " href="#">scoreboardpizzabc.com</a>
 	    </div><!-- /.navbar-header -->
 
@@ -61,21 +61,22 @@
 
 		<div class="carousel-inner">
 			<div class="item active">
-				<img src="images/stock/stock-pizza-4.jpg" alt="">
+				<img src="images/stock/stock-tomatoes.jpg" alt="">
+				<div class="carousel-caption">
+					<h3>made from scratch every day</h3>
+					<h2>Hand made, home town</h2>
+					<p>image caption</p>
+				</div><!-- /.carousel-caption -->
+			</div><!-- /.item -->
+			<div class="item">
+				<img src="images/stock/stock-pasta-2.jpg" alt="">
 				<div class="carousel-caption">
 					<h3>image title</h3>
 					<p>image caption</p>
 				</div><!-- /.carousel-caption -->
 			</div><!-- /.item -->
 			<div class="item">
-				<img src="images/stock/stock-pasta-1.jpg" alt="">
-				<div class="carousel-caption">
-					<h3>image title</h3>
-					<p>image caption</p>
-				</div><!-- /.carousel-caption -->
-			</div><!-- /.item -->
-			<div class="item">
-				<img src="images/stock/stock-sandwich-1.jpg" alt="">
+				<img src="images/stock/stock-sandwich-3.jpg" alt="">
 				<div class="carousel-caption">
 					<h3>image title</h3>
 					<p>image caption</p>
@@ -115,68 +116,82 @@
 	</div><!-- /.row -->	
 	
 	<div class="row" id="menu">
-		<div class="col-md-9 col-md-offset-2">
-			<div id="scoreboard-menu">
-				<h3>Menu</h3>
+		<div class="col-md-9 col-md-offset-2" id="scoreboard-menu">
+			<h3>Menu</h3>
+			
+			<ul id="tabs" class="nav nav-tabs" data-tabs="tabs">
+				<li class="active"><a href="#scoreboard-pizza" data-toggle="tab">Scoreboard Pizzas</a></li>
+				<li><a href="#chicken-specialties" data-toggle="tab">Chicken Specialties</a></li>
+				<li><a href="#broasted-chicken" data-toggle="tab">Broasted Chicken</a></li>
+				<li><a href="#dinner-dish" data-toggle="tab">Dinner Dish</a></li>
+				<li><a href="#sandwiches" data-toggle="tab">Sandwiches</a></li>
+			</ul>
+			
+			<div class="tab-content text-left">
 				
-				<ul id="tabs" class="nav nav-tabs" data-tabs="tabs">
-					<li class="active"><a href="#scoreboard-pizza" data-toggle="tab">Scoreboard Pizzas</a></li>
-					<li><a href="#chicken-specialties" data-toggle="tab">Chicken Specialties</a></li>
-					<li><a href="#broasted-chicken" data-toggle="tab">Broasted Chicken</a></li>
-					<li><a href="#dinner-dish" data-toggle="tab">Dinner Dish</a></li>
-					<li><a href="#sandwiches" data-toggle="tab">Sandwiches</a></li>
-				</ul>
-				
-				<div class="tab-content text-left">
-					
-					<div class="tab-pane active" id="scoreboard-pizza">		
-						<ul>
-							<li>grand slam</li>
-							<li>all-pro</li>
-							<li>sacrifice</li>
-							<li>mexican hat trick</li>
-							<li>all american</li>
-							<li>canadian surfer special</li>
-							<li>meat lovers'</li>
-							<li>bacon lettuce tomato</li>
-						</ul>
+				<div class="tab-pane active" id="scoreboard-pizza">		
+					<dl class="dl-horizontal">
+						<dt>grand slam</dt>
+						<dl>$price</dl>
+						<dt>all-pro</dt>
+						<dl>$price</dl>
+						<dt>sacrifice</dt>
+						<dl>$price</dl>
+						<dt>mexican hat trick</dt>
+						<dl>$price</dl>
+						<dt>all american</dt>
+						<dl>$price</dl>
+						<dt>canadian surfer special</dt>
+						<dl>$price</dl>
+						<dt>meat lovers'</dt>
+						<dl>$price</dl>
+						<dt>bacon lettuce tomato</dt>
+						<dl>$price</dl>
+					</dl>
+				</div>
+			
+				<div class="tab-pane" id="chicken-specialties">
+					<dl class="dl-horizontal">
+						<dt>chicken bacon ranch</dt>
+						<dl>$price</dl>
+						<dt>bbq chicken pizza</dt>
+						<dl>$price</dl>
+						<dt>hot buffalo chicken</dt>
+						<dl>$price</dl>
+					</dl>
+				</div>
+			
+				<div class="tab-pane" id="broasted-chicken">
+					<dl class="dl-horizontal">
+						<dt>1/4 chicken & broasted jo-jo potatoes</dt>
+						<dl>$price</dl>
+						<dt>1/2 chicken & broasted jo-jo potatoes</dt>
+						<dl>$price</dl>
+					</dl>
+				</div>
+			
+				<div class="tab-pane" id="dinner-dish">
+					<dl class="dl-horizontal">
+						<dt>lasagna</dt>
+						<dl>$price</dl>
+					</dl>
+				</div>
+			
+				<div class="tab-pane" id="sandwiches">
+					<dl class="dl-horizontal">
+						<dt>pizza sandwich turnover</dt>
+						<dl>$price</dl>
+						<dt>hot italian hoagie</dt>
+						<dl>$price</dl>
+						<dt>scoreboard pizza special hoagie</dt>
+						<dl>$price</dl>
+						<dt>ham submarine</dt>
+						<dl>$price</dl>
+					</dl>
+				</div>				
 
-					</div>
-				
-					<div class="tab-pane" id="chicken-specialties">
-						<ul>
-							<li>chicken bacon ranch</li>
-							<li>bbq chicken pizza</li>
-							<li>hot buffalo chicken</li>
-						</ul>
-					</div>
-				
-					<div class="tab-pane" id="broasted-chicken">
-						<ul>
-							<li>1/4 chicken & broasted jo-jo potatoes</li>
-							<li>1/2 chicken & broasted jo-jo potatoes</li>
-						</ul>
-					</div>
-				
-					<div class="tab-pane" id="dinner-dish">
-						<ul>
-							<li>lasagna</li>
-						</ul>
-					</div>
-				
-					<div class="tab-pane" id="sandwiches">
-						<ul>
-							<li>pizza sandwich turnover</li>
-							<li>hot italian hoagie</li>
-							<li>scoreboard pizza special hoagie</li>
-							<li>ham submarine</li>
-						</ul>
-					</div>
-				
-
-				</div><!-- /.tab-content -->
-			</div><!-- /#scoreboard-menu -->
-		</div><!-- /.col-md-12 -->
+			</div><!-- /.tab-content -->
+		</div><!-- /.col-md-12 /#scoreboard-menu -->
 	</div><!-- /.row -->
 
 	<div class="row" id="coupons">
