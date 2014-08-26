@@ -2,7 +2,6 @@
 
 .body-content {
 	.row {
-		min-height: 300px;
 		padding-top: 1em;
 		padding-bottom: 1.5em;
 		color: #222;
@@ -11,14 +10,28 @@
 	}
 }
 
+#about,
+#contact,
+#coupons,
+#location,
+#menu {
+	min-height: 590px;
+}
+
 #menu {
 	background: #fff;
-	img {
-		max-height: 100px;
-	}
-	.tab-pane {
-		padding-top: 1em;
-	}
+	#scoreboard-menu{	
+		border: 1px solid #ddd;
+		img {
+			max-height: 100px;
+		}
+		ul#tabs {
+			margin: 0 auto;
+		}
+		.tab-pane {
+			padding-top: 1em;
+		}
+	}	
 }
 #about {}
 #coupons {}
