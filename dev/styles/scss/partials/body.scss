@@ -2,20 +2,28 @@
 
 .body-content {
 	.row {
-		min-height: 275px;
-		color: #eee;
-		background: #333;
-		border-bottom: 1px solid #444;
+		min-height: 300px;
+		padding-top: 1em;
+		padding-bottom: 1.5em;
+		color: #222;
+		background: #eee;
+		border-bottom: 5px solid #ccc;
 	}
 }
-#menu,
-#about {
-	background: #eee;
-	color: #000;	
-}
 
-#menu {}
+#menu {
+	background: #fff;
+	img {
+		max-height: 100px;
+	}
+	.tab-pane {
+		padding-top: 1em;
+	}
+}
 #about {}
 #coupons {}
 #location {}
-#contact {}
+#contact {
+	padding-bottom: 2em;
+	background: #ddd;
+}

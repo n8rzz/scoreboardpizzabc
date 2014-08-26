@@ -1,5 +1,11 @@
 /* mixins.scss ===*/
 
+@mixin box-shadow($horizontal, $vertical, $blur, $spread, $color) {
+  -webkit-box-shadow: $horizontal $vertical $blur $spread $color;
+  -moz-box-shadow: $horizontal $vertical $blur $spread $color;
+  box-shadow: $horizontal $vertical $blur $spread $color;
+}
+
 //https://gist.github.com/jgv/745754
 @mixin opacity($trans) {
   filter: alpha(opactiy=($trans * 100));

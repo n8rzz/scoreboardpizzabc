@@ -6,11 +6,8 @@ $(document).ready(function() {
 	});
 
 	var headerHeight = $('nav.navbar').height();
-
-	$('a[href^="#"]').on('click', function(event) {
-
+	$('.navbar a[href^="#"]').on('click', function(event) {
 	    var target = $( $(this).attr('href') );
-
 	    if( target.length ) {
 	        event.preventDefault();
 	        $('html, body').animate({
@@ -19,5 +16,7 @@ $(document).ready(function() {
 	    }
 
 	});
+
+	$('#tabs').tab();
 
 });
