@@ -24,6 +24,7 @@
 	background-position: top left;
 	#scoreboard-menu{	
 		background: #fff;
+		background-image: url('images/stock/texture-ricepaper.png');
 		border: 1px solid #ddd;
 		@include border-radius(11px);
 		img {
@@ -55,7 +56,11 @@
 		}
 	}	
 }
-#about {}
+#about {
+	background-image: url('images/stock/texture-farmer.png');
+	background-position: top left;
+	background-repeat: repeat-x;
+}
 #coupons {}
 #location {}
 #contact {
