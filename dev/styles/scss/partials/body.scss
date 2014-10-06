@@ -1,12 +1,28 @@
 /* body.scss ===*/
 
+h1 {}
+h2 {}
+h3 {}
+h4 {}
+h5 {}
+h6 {}
+
+
 .body-content {
 	.row {
 		padding-top: 1em;
 		padding-bottom: 1.5em;
 		color: #222;
 		background: #eee;
-		border-bottom: 5px solid #ccc;
+//		border-bottom: 5px solid #ccc;
+	}
+	h1 {
+		font-family: $yellowtail; //$rokkit
+		font-size: 60px;
+	}
+	h2 {
+		font-family: $yellowtail;
+		font-size: 36px;
 	}
 }
 
@@ -18,9 +34,27 @@
 	min-height: 590px;
 }
 
+.checkered {
+	height: 15px;
+	margin: 0;
+	background-image: url('images/checker-border.png');
+	background-repeat: repeat-x;
+}
+
+#about {
+	font-size: 22px;
+//	background-image: url('images/stock/texture-farmer.png');
+//	background-position: top left;
+//	background-repeat: repeat-x;
+	h2 {
+		padding-top: 0.75em;
+		padding-bottom: 1em;
+	}
+}
+
 #menu {
 	padding-top: 3em;
-	background-image: url('images/stock/texture-vertical-wood.jpg');
+	background-image: url('images/stock/texture-wood-grain.png');
 	background-position: top left;
 	#scoreboard-menu{	
 		background: #fff;
@@ -32,6 +66,8 @@
 		}
 		ul#tabs {
 			margin: 0 auto;
+			font-family: $rokkit;
+			font-size: 22px;	
 		}
 		.tab-pane {
 			padding-top: 1em;
@@ -56,14 +92,18 @@
 		}
 	}	
 }
-#about {
-	background-image: url('images/stock/texture-farmer.png');
-	background-position: top left;
-	background-repeat: repeat-x;
-}
+
 #coupons {}
 #location {}
 #contact {
 	padding-bottom: 2em;
 	background: #ddd;
+	#contact-emails {
+		min-height: 0;
+		padding-bottom: 2em;
+		background: #ddd;
+		font-family: $rokkit;
+		font-size: 20px;
+		border-bottom: none;
+	}
 }
