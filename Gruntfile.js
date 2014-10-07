@@ -168,6 +168,7 @@ module.exports = function(grunt) {
 //		'useminPrepare',
 //		'usemin',
 //		'htmlmin',
+		'imagemin',
 		'cssmin'
 
 	]);

@@ -45,9 +45,6 @@ h6 {}
 
 #about {
 	font-size: 22px;
-//	background-image: url('images/stock/texture-farmer.png');
-//	background-position: top left;
-//	background-repeat: repeat-x;
 	h2 {
 		padding-top: 0.75em;
 		padding-bottom: 1em;
@@ -56,11 +53,11 @@ h6 {}
 
 #menu {
 	padding-top: 3em;
-	background-image: url('images/stock/texture-wood-grain.png');
+	background-image: url('images/texture-wood-grain.png');
 	background-position: top left;
 	#scoreboard-menu{	
 		background: #fff;
-		background-image: url('images/stock/texture-ricepaper.png');
+		background-image: url('images/texture-ricepaper.png');
 		border: 6px solid #D11919;
 		@include border-radius(11px);
 		img {
@@ -95,7 +92,6 @@ h6 {}
 			dl {
 				padding-left: 5px;
 				text-align: left;
-//				font-style: italic;
 			}
 		}
 	}	
@@ -105,7 +101,6 @@ h6 {}
 #location {
 	padding-top: 0;
 	background: #5D9848;
-//	background: url('images/stock/texture-wood-laminate-sm.jpg'); //#ADC2EB 
 	iframe {
 		margin-top: 0.5em;
 	}

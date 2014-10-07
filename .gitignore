@@ -2,9 +2,6 @@
 bower_components/
 node_modules/
 
-dev/style.css
-dev/style.css.map
-
 dev/.sass-cache/
 dev/_ocss/
 dev/fonts/
