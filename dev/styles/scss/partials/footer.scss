@@ -2,7 +2,20 @@
 
 .primary-footer {
 	padding-top: 15px;
-	background-color: #212121;
-	color: #eee;
+	padding-bottom: 10px;
 	min-height: 75px;
+	background-color: #212121;
+	color: #ededed;
+	font-family: $rokkit;
+	font-size: 18px;
+	letter-spacing: 1px;
+	address {
+		line-height: 1.1;
+	}
+	img {
+		margin-bottom: 0.5em;
+	}
+	span {
+		color: #fff;
+	}
 }

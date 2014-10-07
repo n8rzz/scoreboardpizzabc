@@ -118,6 +118,32 @@ module.exports = function(grunt) {
 				dest: 'dist/styles/',
 				ext: '.min.css'
 			}
+		},
+		imagemin: {
+			png: {
+				options: {
+					optimizationLevel: 7
+				},
+				files: [{
+					expand: true,
+					cwd: 'dev/images/original-size',
+					src: ['**/*.png'],
+					dest: 'dev/images/',
+					ext: '.png'
+				}]
+			},
+			jpg: {
+				options: {
+					progressive: true
+				},
+				files: [{
+					expand: true,
+					cwd: 'dev/images/original-size',
+					src: ['**/*.jpg'],
+					dest: 'dev/images/',
+					ext: '.jpg'
+				}]
+			}
 		}
 
 	});

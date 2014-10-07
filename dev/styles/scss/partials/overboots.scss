@@ -3,6 +3,8 @@
 /* navigation */
 .navbar {
 	margin-bottom: 0;
+	padding-right: 20px;
+	padding-left: 15px;
 	min-height: 75px;
 	background: #fff;
 	font-family: $rokkit;
@@ -24,13 +26,17 @@ a.navbar-brand img {
 	border-bottom: 2px solid red;
 }
 
+.container-fluid {
+	padding: 0;
+}
+
 .jumbotron {
 	margin-bottom: 0;
 }
 
 /* carousel */
 .carousel {
-	margin-bottom: 2em;
+//	margin-bottom: 2em;
 	img {
 		width: 100%;
 		max-height: 590px;

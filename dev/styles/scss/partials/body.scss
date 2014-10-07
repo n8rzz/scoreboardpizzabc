@@ -11,7 +11,9 @@ h6 {}
 .body-content {
 	.row {
 		padding-top: 1em;
+		padding-right: 15px;
 		padding-bottom: 1.5em;
+		padding-left: 15px;
 		color: #222;
 		background: #eee;
 //		border-bottom: 5px solid #ccc;
@@ -59,42 +61,55 @@ h6 {}
 	#scoreboard-menu{	
 		background: #fff;
 		background-image: url('images/stock/texture-ricepaper.png');
-		border: 1px solid #ddd;
+		border: 6px solid #D11919;
 		@include border-radius(11px);
 		img {
 			max-height: 100px;
 		}
+		p {
+			font-size: 12px;
+			a {color: #FF3030;}
+		}
 		ul#tabs {
 			margin: 0 auto;
-			font-family: $rokkit;
-			font-size: 22px;	
+			li {
+				font-family: $rokkit;
+				font-size: 18px;	
+			}
 		}
 		.tab-pane {
 			padding-top: 1em;
 		}
 		.dl-horizontal {
-			width: 75%;
+			width: 85%;
 			margin: 1em auto;
 			padding-bottom: 2em;
 			display: block;
 			overflow: hidden;
 			font-size: 12px;
 			dt {
-				width: 75%;
+				width: 80%;
 				text-align: left;
 				border-bottom: 1px dotted #ddd;
 			}
 			dl {
 				padding-left: 5px;
 				text-align: left;
-				font-style: italic;
+//				font-style: italic;
 			}
 		}
 	}	
 }
 
 #coupons {}
-#location {}
+#location {
+	padding-top: 0;
+	background: #5D9848;
+//	background: url('images/stock/texture-wood-laminate-sm.jpg'); //#ADC2EB 
+	iframe {
+		margin-top: 0.5em;
+	}
+}
 #contact {
 	padding-bottom: 2em;
 	background: #ddd;
