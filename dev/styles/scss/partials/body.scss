@@ -12,7 +12,7 @@ h6 {}
 	.row {
 		padding-top: 1em;
 		padding-right: 15px;
-		padding-bottom: 1.5em;
+		padding-bottom: 2.5em;
 		padding-left: 15px;
 		color: #222;
 		background: #eee;
@@ -57,7 +57,7 @@ h6 {}
 	background-position: top left;
 	#scoreboard-menu{	
 		background: #fff;
-		background-image: url('images/texture-ricepaper.png');
+		background-image: url('images/texture-rockywall.png');
 		border: 6px solid #D11919;
 		@include border-radius(11px);
 		img {
@@ -65,42 +65,91 @@ h6 {}
 		}
 		p {
 			font-size: 12px;
-			a {color: #FF3030;}
-		}
-		ul#tabs {
-			margin: 0 auto;
-			li {
-				font-family: $rokkit;
-				font-size: 18px;	
-			}
-		}
-		.tab-pane {
-			padding-top: 1em;
-		}
-		.dl-horizontal {
-			width: 85%;
-			margin: 1em auto;
-			padding-bottom: 2em;
-			display: block;
-			overflow: hidden;
-			font-size: 12px;
-			dt {
-				width: 80%;
-				text-align: left;
-				border-bottom: 1px dotted #ddd;
-			}
-			dl {
-				padding-left: 5px;
-				text-align: left;
+			a {
+				color: #FF3030;
 			}
 		}
 	}	
 }
+#tabs {
+	margin: 0 1em;
+	li {
+		font-family: $rokkit;
+		font-size: 18px;
+
+		@media screen and (max-width: $screen-small) {
+			width: 60%;
+			margin: 0 auto;
+			float: none;
+			display: block;
+			font-size: 16px;
+		}
+	}
+}
+.tab-pane {
+	padding-top: 1em;
+
+	table.food-menu {
+		width: 100%;
+		margin-left: 20px;
+		padding-bottom: 2em;
+		display: block;
+		overflow: hidden;
+		font-size: 18px;
+		@media screen and (max-width: $screen-small) {
+			width: 100%;
+		}
+		tr { }
+		td {
+			text-align: left;
+			@media screen and (max-width: $screen-small) { 
+				width: 50%;
+			}
+			@media screen and (min-width: $screen-small) {
+				min-width: 300px;
+			}
+		}
+		td:first-child {
+			font-weight: bold;
+
+			@media screen and (min-width: $screen-small) {}
+			@media screen and (min-width: $screen-medium) {}
+			@media screen and (min-width: $screen-large) {
+				width: 635px;
+			}
+		}
+		td:last-child {
+			text-align: right;
+		}
+	}
+}
+
+.dl-horizontal {
+	dt {
+		@media screen and (max-width: $screen-small) {
+			width: 50%;
+		}
+	}
+	dl {
+		padding-left: 5px;
+		text-align: left;
+	}
+}
+
 
 #coupons {}
 #location {
-	padding-top: 0;
-	background: #5D9848;
+	padding-top: 0.5em;
+	background: url('images/texture-congruent-outline.png');
+	background-repeat: repeat;
+	color: #eee;
+	address {
+		font-family: $rokkit;
+		color: #cecece;
+		font-size: 24px;
+		letter-spacing: 1px;
+		line-height: 1.1;
+	}
 	iframe {
 		margin-top: 0.5em;
 	}
@@ -108,6 +157,7 @@ h6 {}
 #contact {
 	padding-bottom: 2em;
 	background: #ddd;
+	background-repeat: repeat;
 	#contact-emails {
 		min-height: 0;
 		padding-bottom: 2em;
@@ -116,4 +166,8 @@ h6 {}
 		font-size: 20px;
 		border-bottom: none;
 	}
+	.row {
+		background: #ddd;
+	}
+
 }

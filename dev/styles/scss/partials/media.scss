@@ -1,0 +1,7 @@
+/* media.scss ===*/
+
+$screen-small: 768px;
+$screen-medium: 992px;
+$screen-large: 1200px;
+
+@media screen and (max-width: $screen-small) { }

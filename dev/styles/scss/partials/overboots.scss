@@ -10,12 +10,13 @@
 	font-family: $rokkit;
 	font-size: 22px;
 	border: none;
-	@include box-shadow(1px, 5px, 18px, 0, #efefef);
+//	@include box-shadow(1px, 5px, 18px, 0, #efefef);
 }
 
-a.navbar-brand img {
-//	margin-left: 5px;
-//	margin-top: -5px;
+.navbar-brand {
+	font-size: 26px;
+}
+.navbar-brand img {
 	border: 3px solid #fff;
 	@include border-radius(14px);
 	@include box-shadow(0, 3px, 16px, 1px, #efefef);

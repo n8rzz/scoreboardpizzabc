@@ -6,6 +6,8 @@ $(document).ready(function() {
 	});
 
 	var headerHeight = $('nav.navbar').height();
+	headerHeight += 16;
+	console.log(headerHeight);
 	$('.navbar a[href^="#"]').on('click', function(event) {
 	    var target = $( $(this).attr('href') );
 	    if( target.length ) {

@@ -16,12 +16,12 @@
   background: #fff;
   font-family: "Rokkitt", serif;
   font-size: 22px;
-  border: none;
-  -webkit-box-shadow: 1px 5px 18px 0 #efefef;
-  -moz-box-shadow: 1px 5px 18px 0 #efefef;
-  box-shadow: 1px 5px 18px 0 #efefef; }
+  border: none; }
 
-a.navbar-brand img {
+.navbar-brand {
+  font-size: 26px; }
+
+.navbar-brand img {
   border: 3px solid #fff;
   -webkit-border-radius: 14px;
   border-radius: 14px;
@@ -103,6 +103,7 @@ a.navbar-brand img {
     border-bottom: 2px solid red; }
 
 /* Partials - Sections */
+/* media.scss ===*/
 /* header.scss ===*/
 .primary-header {
   margin-top: 80px;
@@ -113,7 +114,7 @@ a.navbar-brand img {
 .body-content .row {
   padding-top: 1em;
   padding-right: 15px;
-  padding-bottom: 1.5em;
+  padding-bottom: 2.5em;
   padding-left: 15px;
   color: #222;
   background: #eee; }
@@ -149,7 +150,7 @@ a.navbar-brand img {
   background-position: top left; }
   #menu #scoreboard-menu {
     background: #fff;
-    background-image: url("images/texture-ricepaper.png");
+    background-image: url("images/texture-rockywall.png");
     border: 6px solid #D11919;
     -webkit-border-radius: 11px;
     border-radius: 11px;
@@ -161,37 +162,73 @@ a.navbar-brand img {
       font-size: 12px; }
       #menu #scoreboard-menu p a {
         color: #FF3030; }
-    #menu #scoreboard-menu ul#tabs {
-      margin: 0 auto; }
-      #menu #scoreboard-menu ul#tabs li {
-        font-family: "Rokkitt", serif;
-        font-size: 18px; }
-    #menu #scoreboard-menu .tab-pane {
-      padding-top: 1em; }
-    #menu #scoreboard-menu .dl-horizontal {
-      width: 85%;
-      margin: 1em auto;
-      padding-bottom: 2em;
-      display: block;
-      overflow: hidden;
-      font-size: 12px; }
-      #menu #scoreboard-menu .dl-horizontal dt {
-        width: 80%;
-        text-align: left;
-        border-bottom: 1px dotted #ddd; }
-      #menu #scoreboard-menu .dl-horizontal dl {
-        padding-left: 5px;
-        text-align: left; }
+
+#tabs {
+  margin: 0 1em; }
+  #tabs li {
+    font-family: "Rokkitt", serif;
+    font-size: 18px; }
+    @media screen and (max-width: 768px) {
+      #tabs li {
+        width: 60%;
+        margin: 0 auto;
+        float: none;
+        display: block;
+        font-size: 16px; } }
+
+.tab-pane {
+  padding-top: 1em; }
+  .tab-pane table.food-menu {
+    width: 100%;
+    margin-left: 20px;
+    padding-bottom: 2em;
+    display: block;
+    overflow: hidden;
+    font-size: 18px; }
+    @media screen and (max-width: 768px) {
+      .tab-pane table.food-menu {
+        width: 100%; } }
+    .tab-pane table.food-menu td {
+      text-align: left; }
+      @media screen and (max-width: 768px) {
+        .tab-pane table.food-menu td {
+          width: 50%; } }
+      @media screen and (min-width: 768px) {
+        .tab-pane table.food-menu td {
+          min-width: 300px; } }
+    .tab-pane table.food-menu td:first-child {
+      font-weight: bold; }
+      @media screen and (min-width: 1200px) {
+        .tab-pane table.food-menu td:first-child {
+          width: 635px; } }
+    .tab-pane table.food-menu td:last-child {
+      text-align: right; }
+
+@media screen and (max-width: 768px) {
+  .dl-horizontal dt {
+    width: 50%; } }
+.dl-horizontal dl {
+  padding-left: 5px;
+  text-align: left; }
 
 #location {
-  padding-top: 0;
-  background: #5D9848; }
+  padding-top: 0.5em;
+  background: url("images/texture-congruent-outline.png");
+  background-repeat: repeat;
+  color: #eee; }
+  #location address {
+    font-family: "Rokkitt", serif;
+    color: #cecece;
+    font-size: 24px;
+    letter-spacing: 1px;
+    line-height: 1.1; }
   #location iframe {
     margin-top: 0.5em; }
 
 #contact {
   padding-bottom: 2em;
-  background: #ddd; }
+  background: #ddd;
+  background-repeat: repeat; }
   #contact #contact-emails {
     min-height: 0;
     padding-bottom: 2em;
@@ -199,11 +236,13 @@ a.navbar-brand img {
     font-family: "Rokkitt", serif;
     font-size: 20px;
     border-bottom: none; }
+  #contact .row {
+    background: #ddd; }
 
 /* footer.scss ===*/
 .primary-footer {
-  padding-top: 15px;
-  padding-bottom: 10px;
+  padding-top: 1.75em;
+  padding-bottom: 1.75em;
   min-height: 75px;
   background-color: #212121;
   color: #ededed;
@@ -216,3 +255,5 @@ a.navbar-brand img {
     margin-bottom: 0.5em; }
   .primary-footer span {
     color: #fff; }
+
+/*# sourceMappingURL=style.css.map */
