@@ -17,6 +17,7 @@ h6 {}
 		color: #222;
 		background: #eee;
 //		border-bottom: 5px solid #ccc;
+		letter-spacing: 1px;
 	}
 	h1 {
 		font-family: $yellowtail; //$rokkit
@@ -98,6 +99,7 @@ h6 {}
 		font-size: 18px;
 		@media screen and (max-width: $screen-small) {
 			width: 100%;
+			font-size: 14px;
 		}
 		tr { }
 		td {

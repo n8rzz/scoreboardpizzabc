@@ -117,7 +117,8 @@
   padding-bottom: 2.5em;
   padding-left: 15px;
   color: #222;
-  background: #eee; }
+  background: #eee;
+  letter-spacing: 1px; }
 .body-content h1 {
   font-family: "Yellowtail", cursive;
   font-size: 60px; }
@@ -187,7 +188,8 @@
     font-size: 18px; }
     @media screen and (max-width: 768px) {
       .tab-pane table.food-menu {
-        width: 100%; } }
+        width: 100%;
+        font-size: 14px; } }
     .tab-pane table.food-menu td {
       text-align: left; }
       @media screen and (max-width: 768px) {
